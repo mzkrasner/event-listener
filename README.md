@@ -29,7 +29,7 @@ This will start your express server and begin writing to ComposeDB
 
 5. Visit http://localhost:5005/graphql and query the vote index to see your writes pulling through. For example:
 
-`
+```graphql
 query{
       voteIndex(first: 10){
         edges{
@@ -39,7 +39,7 @@ query{
         }
       }
     }
-`
+```
 
 ## Learn More
 
