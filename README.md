@@ -25,6 +25,21 @@ npm run generate
 nvm use 16
 npm run dev
 ```
+This will start your express server and begin writing to ComposeDB
+
+5. Visit http://localhost:5005/graphql and query the vote index to see your writes pulling through. For example:
+
+`
+query{
+      voteIndex(first: 10){
+        edges{
+          node{
+            id
+          }
+        }
+      }
+    }
+`
 
 ## Learn More
 
