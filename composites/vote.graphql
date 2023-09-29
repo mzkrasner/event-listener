@@ -1,0 +1,11 @@
+
+type Vote @createModel(
+    accountRelation: LIST
+    description: "A simple vote record model"
+  )
+{
+  voter: DID! @accountReference
+  support: Boolean!
+}
+
+
